@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>Xsolla Frontend</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: #F0F3FF;
+        }
+        .container {
+            font-family: Arial;
+            background-color: #ffffff;
+            margin: 80px;
+            padding: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.12);
+            border-radius: 16px; 
+        }
+        .cartname {
+            color: #ffffff;
+            font-family: Arial;
+            font-weight: bolder;
+            position: absolute;
+            font-size: 48px;
+        }
+        .btn-primary.dropdown-toggle {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: #444444;
+        }
+        .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+            color: rgb(0, 0, 0);
+            background-color: #ffffff;
+            border-color: #444444;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page Content -->
+    <div class="container">
+        <h3 class="" style="font-weight: bolder;">Event Listing</h3>
+
+        <div style="margin-top: 20px; margin-bottom: 30px;">
+            City:
+            <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown">Amsterdam</button>
+            <div id="cities" class="dropdown-menu">
+                <a class="dropdown-item" href="#">Amsterdam</a>
+                <a class="dropdown-item" href="#">Praha</a>
+                <a class="dropdown-item" href="#">Brussel</a>
+            </div>
+        
+            Month:
+            <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown">September</button>
+            <div id="months" class="dropdown-menu">
+                <a class="dropdown-item" href="#">September</a>
+                <a class="dropdown-item" href="#">November</a>
+                <a class="dropdown-item" href="#">December</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="cartname">
+                    <h5 class="cartname" style="text-align: center;font-weight: normal;
+                    width: 80px;height: 80px;
+                    left: 40px;top: 40px;
+                    border: 2px solid #f1f1f1; box-sizing: border-box; border-radius: 6px;">14</h5>
+                </div>
+                <img src="Rectangle_3_1.png" class="card-img-top" >
+                    <h5 class="cartname"style="bottom: 20px; left: 50px;">Rave Autumn</h5>
+                
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <div class="cartname">
+                    <h5 class="cartname" style="text-align: center; font-weight: normal;
+                    width: 80px; height: 80px; 
+                    left: 40px; top: 40px; 
+                    border: 2px solid #FFFFFF;box-sizing: border-box;border-radius: 6px;">20</h5>
+                </div>
+                <img src="Rectangle_3_6.png" class="card-img-top">
+                <h5 class="cartname" style="bottom: 20px; left: 50px;">Best of 2019</h5>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top: 30px">
+            <div class="col-md-6 col-sm-12">
+                <div class="cartname">
+                    <h5 class="cartname" style="text-align:center;font-weight: normal;
+                    width: 80px;height: 80px;
+                    left: 40px;top: 40px;
+                    border: 2px solid #FFFFFF;box-sizing: border-box;border-radius: 6px;">14</h5>
+                </div>
+                <img src="Rectangle_3_5.png" class="card-img-top">
+                <h5 class="cartname"style="bottom: 20px; left: 50px;">Faderhead</h5>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <div class="cartname">
+                    <h5 class="cartname" style="font-weight: normal;text-align:center;
+                    width: 80px;height: 80px;
+                    left: 40px;top: 40px;
+                    border: 2px solid #ffffff;box-sizing: border-box;border-radius: 6px;">14</h5>
+                </div>
+
+                <img src="Rectangle_3_3.png" class="card-img-top">
+                <h5 class="cartname"style="bottom: 20px; left: 50px;">Purple Fog Side</h5>
+                
+            </div>
+
+        </div>
+    </div><!-- /.row -->
+</div><!-- /.container -->
+</body>
+</html>
